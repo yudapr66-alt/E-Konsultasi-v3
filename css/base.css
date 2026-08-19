@@ -1,0 +1,216 @@
+/* ============================================================
+   BASE.CSS — Variabel, Reset, Tipografi, Layout, Responsif
+   Klinik Konsultasi APIP · Inspektorat Kab. Empat Lawang
+   ============================================================ */
+
+/* ─── CSS VARIABLES ─── */
+:root {
+  --blue-deep:    #1B4F8A;
+  --blue-mid:     #2563EB;
+  --teal:         #0E7490;
+  --teal-light:   #E0F2FE;
+  --gold:         #B45309;
+  --gold-light:   #FEF3C7;
+  --red-strip:    #DC2626;
+  --bg:           #F0F9FF;
+  --surface:      #FFFFFF;
+  --border:       #CBD5E1;
+  --text-primary: #0F172A;
+  --text-secondary:#475569;
+  --text-muted:   #94A3B8;
+  --success:      #059669;
+  --success-light:#ECFDF5;
+  --radius:       10px;
+  --shadow:       0 2px 12px rgba(15,23,42,0.08);
+  --shadow-lg:    0 8px 32px rgba(15,23,42,0.14);
+}
+
+/* ─── RESET ─── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ─── BODY ─── */
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text-primary);
+  min-height: 100vh;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* ─── HEADER ─── */
+.strip-merah {
+  height: 4px;
+  background: linear-gradient(90deg, var(--red-strip) 50%, #fff 50%);
+}
+.site-header {
+  background: var(--blue-deep);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.22);
+}
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.logo-wrap {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.25);
+  background: #fff;
+  padding: 2px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+.header-text { flex: 1; }
+.header-text .brand-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #FFD700;
+  line-height: 1;
+  margin-bottom: 2px;
+}
+.header-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.header-text .subtitle {
+  font-size: 11px;
+  color: rgba(255,255,255,0.60);
+  margin-top: 3px;
+}
+.admin-btn {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.25);
+  color: rgba(255,255,255,0.85);
+  padding: 7px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  transition: all .2s;
+  white-space: nowrap;
+}
+.admin-btn:hover { background: rgba(255,255,255,0.2); color: #fff; }
+
+/* ─── NAVIGASI ─── */
+.nav-bar {
+  background: var(--surface);
+  border-bottom: 2px solid var(--border);
+  position: sticky;
+  top: 82px;
+  z-index: 90;
+}
+.nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+}
+.nav-btn {
+  padding: 14px 20px;
+  border: none;
+  background: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all .2s;
+  white-space: nowrap;
+  margin-bottom: -2px;
+}
+.nav-btn.active  { color: var(--blue-deep); border-bottom-color: var(--blue-deep); }
+.nav-btn:hover   { color: var(--blue-mid); }
+
+/* ─── MAIN LAYOUT ─── */
+.main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px 60px;
+}
+.page         { display: none; }
+.page.active  { display: block; }
+
+/* ─── SECTION HEADINGS ─── */
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--blue-deep);
+  margin-bottom: 6px;
+}
+.section-sub {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+/* ─── STAT GRID ─── */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.stat-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 24px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+.stat-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--blue-deep);
+  line-height: 1;
+}
+.stat-label { font-size: 12px; color: var(--text-muted); margin-top: 6px; font-weight: 500; }
+
+/* ─── EMPTY STATE ─── */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-muted);
+}
+.empty-state .es-icon { font-size: 48px; margin-bottom: 12px; }
+.empty-state p { font-size: 14px; }
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 640px) {
+  .header-inner       { gap: 10px; }
+  .header-text h1     { font-size: 14px; }
+  .stat-grid          { grid-template-columns: 1fr; }
+  .nav-btn            { padding: 12px 14px; font-size: 12px; }
+}
