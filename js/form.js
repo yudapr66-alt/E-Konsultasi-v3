@@ -170,6 +170,14 @@ function getKecamatan() {
   return '';
 }
 
+function normalizeWhatsAppNumber(value) {
+  const digits = value.replace(/[^\d+]/g, '');
+  if (digits.startsWith('+62')) return '62' + digits.slice(3);
+  if (digits.startsWith('62')) return digits;
+  if (digits.startsWith('08')) return '628' + digits.slice(2);
+  return digits;
+}
+
 // ─── PENYIMPANAN FILE (base64 → localStorage) ────────────────
 // File disimpan terpisah dengan key 'el_file_{ticketId}'
 // agar tidak membebani data tiket utama
@@ -272,7 +280,7 @@ async function submitForm() {
   const instType = document.getElementById('f-inst-type').value;
   const instName = getInstansiName();
   const jabatan  = document.getElementById('f-jabatan').value;
-  const wa       = document.getElementById('f-wa').value.trim();
+  const wa       = normalizeWhatsAppNumber(document.getElementById('f-wa').value.trim());
   const program  = document.getElementById('f-program').value.trim();
   const kegiatan = document.getElementById('f-kegiatan').value.trim();
   const uraian   = document.getElementById('f-uraian').value.trim();
@@ -282,7 +290,7 @@ async function submitForm() {
     return;
   }
   if (!/^628\d{8,12}$/.test(wa)) {
-    alert('⚠️ Format WhatsApp tidak valid.\nGunakan format 628xxx, contoh: 6281234567890.');
+    alert('⚠️ Format WhatsApp tidak valid.\nGunakan format 08xxx atau 628xxx, contoh: 081234567890.');
     return;
   }
 

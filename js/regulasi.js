@@ -8,60 +8,46 @@
 
 const REGULASI_DATA = [
   {
-    title:    'Peraturan Bupati Empat Lawang No. 32 Tahun 2024 tentang Standar Satuan Harga',
-    category: 'Standar Harga',
+    title:    'UU No. 3 Tahun 2024 tentang Perubahan Kedua atas UU Desa',
+    category: 'Regulasi Desa',
     year:     2024,
-    icon:     '💰',
-    file_url: '#'     // ← ganti dengan path file nyata
-  },
-  {
-    title:    'PMK No. 193/PMK.07/2018 tentang Pengelolaan Dana Desa',
-    category: 'Dana Desa',
-    year:     2018,
-    icon:     '🏘️',
-    file_url: 'https://jdih.kemenkeu.go.id/fullText/2018/193~PMK.07~2018Per.pdf'
+    icon:     '🏛️',
+    file_url: 'https://peraturan.bpk.go.id/Details/283617/uu-no-3-tahun-2024'
   },
   {
     title:    'Permendagri No. 20 Tahun 2018 tentang Pengelolaan Keuangan Desa',
     category: 'Keuangan Desa',
     year:     2018,
     icon:     '📊',
-    file_url: '#'
+    file_url: 'https://peraturan.bpk.go.id/Details/139714/permendagri-no-20-tahun-2018'
   },
   {
-    title:    'PMK No. 85/PMK.05/2018 tentang Tata Cara Pemungutan Pajak Dana Desa',
-    category: 'Pajak',
-    year:     2018,
-    icon:     '🧾',
-    file_url: '#'
+    title:    'PMK No. 7 Tahun 2026 tentang Pengelolaan Dana Desa Tahun Anggaran 2026',
+    category: 'Dana Desa',
+    year:     2026,
+    icon:     '🏘️',
+    file_url: 'https://jdih.kemenkeu.go.id/dok/pmk-7-tahun-2026'
   },
   {
-    title:    'UU No. 6 Tahun 2014 tentang Desa',
-    category: 'Regulasi Desa',
-    year:     2014,
-    icon:     '🏛️',
-    file_url: 'https://peraturan.bpk.go.id/Details/38582/uu-no-6-tahun-2014'
-  },
-  {
-    title:    'PP No. 60 Tahun 2014 tentang Dana Desa yang Bersumber dari APBN',
+    title:    'PP No. 60 Tahun 2014 tentang Dana Desa yang Bersumber dari APBN beserta perubahannya',
     category: 'Dana Desa',
     year:     2014,
     icon:     '💵',
-    file_url: '#'
+    file_url: 'https://peraturan.bpk.go.id/Details/55100/pp-no-60-tahun-2014'
   },
   {
-    title:    'PMK No. 199/PMK.07/2021 tentang Pengelolaan Dana Desa',
-    category: 'Dana Desa',
-    year:     2021,
-    icon:     '🏘️',
-    file_url: '#'
+    title:    'PMK No. 54 Tahun 2026 tentang Standar Biaya Masukan',
+    category: 'Standar Biaya',
+    year:     2026,
+    icon:     '💰',
+    file_url: 'https://jdih.kemenkeu.go.id/dok/pmk-54-tahun-2026'
   },
   {
-    title:    'Pedoman Teknis Penyusunan SPJ Dana Desa — Inspektorat Kab. Empat Lawang 2024',
-    category: 'Pedoman Teknis',
-    year:     2024,
-    icon:     '📋',
-    file_url: '#'     // ← upload ke server dan isi path-nya
+    title:    'Portal Peraturan Perpajakan Direktorat Jenderal Pajak',
+    category: 'Pajak',
+    year:     2026,
+    icon:     '🧾',
+    file_url: 'https://www.pajak.go.id/id/peraturan-pajak'
   }
 ];
 
