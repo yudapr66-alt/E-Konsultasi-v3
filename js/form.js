@@ -52,34 +52,6 @@ const INSTANSI_DATA = {
     label: 'Kecamatan',
     unitLabel: 'Unit / Desa / Sekolah',
     units: {
-    /*  'Kecamatan Pendopo': [
-        'Desa Bandar Agung','Desa Batu Cawang','Desa Bayau',
-        'Desa Gunung Merakasa Lama','Desa Gunung Meraksa Baru',
-        'Desa Jarakan','Desa Landur','Desa Lubuk Layang',
-        'Desa Lubuk Sepang','Desa Manggilan','Desa Muara Karang',
-        'Desa Nanjungan','Desa Sarang Bulan','Desa Tanjung Baru',
-        'Desa Tanjung Eran','Desa Tanjung Raman',
-        'SDN 01 Pendopo','SDN 02 Pendopo','SDN 03 Pendopo','SDN 04 Pendopo',
-        'SDN 05 Pendopo','SDN 06 Pendopo','SDN 07 Pendopo','SDN 08 Pendopo',
-        'SDN 09 Pendopo','SDN 10 Pendopo','SDN 11 Pendopo','SDN 12 Pendopo',
-        'SDN 13 Pendopo','SDN 14 Pendopo','SDN 15 Pendopo','SDN 16 Pendopo',
-        'SDN 17 Pendopo','SDN 18 Pendopo','SDN 19 Pendopo','SDN 20 Pendopo',
-        'SDN 21 Pendopo','SDN 22 Pendopo','SDN 23 Pendopo','SDN 24 Pendopo',
-        'SDN 25 Pendopo','SDN 26 Pendopo','SDN 27 Pendopo',
-        'SMPN 01 Pendopo','SMPN 02 Pendopo','SMPN 03 Pendopo','SMPN 04 Pendopo',
-      ],
-      'Kecamatan Pendopo Barat': [
-        'Desa Air Kandis','Desa Karang Caya','Desa Kungkilan','Desa Lingge',
-        'Desa Muara Lintang Baru','Desa Muara Lintang Lama','Desa Padang Bindu',
-        'Desa Rantau Dodor','Desa Tanjung Raya','Desa Tebat Payang',
-        'SDN 01 Pendopo Barat','SDN 02 Pendopo Barat','SDN 03 Pendopo Barat',
-        'SDN 04 Pendopo Barat','SDN 05 Pendopo Barat','SDN 06 Pendopo Barat',
-        'SDN 07 Pendopo Barat','SDN 08 Pendopo Barat','SDN 09 Pendopo Barat',
-        'SDN 10 Pendopo Barat',
-        'SMPN 01 Pendopo Barat','SMPN 02 Pendopo Barat',
-        'SMPN 03 Pendopo Barat','SMPN 04 Pendopo Barat',
-      ], */
-
       'Kecamatan Pasemah Air Keruh': [
         'Desa Air Mayam','Desa Bandar Agung','Desa Kebon Jati',
         'Desa Lawang Agung','Desa Muara Aman','Desa Muara Rungga',
@@ -108,15 +80,6 @@ const INSTANSI_DATA = {
       'Puskesmas Pasemah Air Keruh',
     ]
   },
-  /*
-  rs: {
-    label: 'Rumah Sakit Pratama',
-    unitLabel: 'Nama RS',
-    units: [
-      'Rumah Sakit Pratama Kecamatan Pendopo',
-    ]
-  }
-  */
 };
 
 // ─── TOGGLE DROPDOWN INSTANSI ────────────────────────────────
