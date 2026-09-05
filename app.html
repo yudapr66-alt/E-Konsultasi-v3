@@ -44,6 +44,7 @@
     <button class="nav-btn"        id="nav-cek"      onclick="showPage('cek')">🔎 Cek Status Tiket</button>
     <button class="nav-btn"        id="nav-faq"      onclick="showPage('faq')">💬 Tanya Jawab Umum</button>
     <button class="nav-btn"        id="nav-regulasi" onclick="showPage('regulasi')">📁 Regulasi</button>
+    <button class="nav-btn"        id="nav-manual"   onclick="window.location.href='js/manual-book.html'">📘 Manual Book</button>
   </div>
 </nav>
 
@@ -258,6 +259,61 @@
     <h2 class="section-title">Pusat Unduh Regulasi</h2>
     <p class="section-sub">Dokumen aturan resmi yang menjadi dasar pembinaan dan pendampingan.</p>
     <div class="reg-grid" id="reg-grid"></div>
+  </div>
+
+  <!-- ── MANUAL BOOK ──────────────────────────────────────── -->
+  <div class="page" id="page-manual">
+    <section class="manual-hero">
+      <div class="manual-hero-copy"><div class="manual-kicker">PANDUAN PENGGUNAAN</div>
+        <h2>Semua langkah,<br><span>lebih mudah dipahami.</span></h2>
+        <p>Panduan lengkap menggunakan SI-PEDANG APIP untuk mengajukan pertanyaan, memantau tiket, membaca jawaban auditor, dan menemukan regulasi resmi.</p>
+        <div class="manual-hero-pills"><span>👤 Penanya</span><span>🛡️ Auditor</span><span>📚 Regulasi resmi</span></div>
+      </div>
+      <div class="manual-hero-art"><div class="manual-art-ring"><span>APIP</span></div><div class="manual-art-note note-top">01 <b>Ajukan</b></div><div class="manual-art-note note-bottom">04 <b>Terima jawaban</b></div></div>
+    </section>
+
+    <div class="manual-section-heading">
+      <div><span class="manual-eyebrow">ALUR LAYANAN</span><h3>Bagaimana prosesnya?</h3></div>
+      <p>Empat langkah dari pertanyaan pertama sampai jawaban diterima.</p>
+    </div>
+    <div class="manual-flow">
+      <div class="manual-step step-blue"><div class="manual-step-number">01</div><div class="manual-step-icon">📝</div><h4>Ajukan pertanyaan</h4><p>Isi identitas, pilih instansi, tulis program dan kegiatan, lalu jelaskan kebutuhan secara runtut.</p></div>
+      <div class="manual-flow-line"></div>
+      <div class="manual-step step-teal"><div class="manual-step-number">02</div><div class="manual-step-icon">🎫</div><h4>Simpan nomor tiket</h4><p>Sistem membuat nomor tiket setelah pertanyaan dikirim. Simpan nomor ini untuk mengecek perkembangan.</p></div>
+      <div class="manual-flow-line"></div>
+      <div class="manual-step step-gold"><div class="manual-step-number">03</div><div class="manual-step-icon">🔎</div><h4>Auditor menelaah</h4><p>Auditor memeriksa uraian, dokumen pendukung, serta dasar aturan yang relevan.</p></div>
+      <div class="manual-flow-line"></div>
+      <div class="manual-step step-green"><div class="manual-step-number">04</div><div class="manual-step-icon">💬</div><h4>Terima tanggapan</h4><p>Jawaban dikirim melalui WhatsApp. Gunakan nomor tiket untuk melihat status dan rekomendasi.</p></div>
+    </div>
+
+    <div class="manual-columns">
+      <section class="manual-panel manual-panel-blue">
+        <div class="manual-panel-title"><span>👤</span><div><span class="manual-eyebrow">UNTUK PENANYA</span><h3>Siapkan pertanyaan dengan baik</h3></div></div>
+        <ol class="manual-list">
+          <li><strong>Pilih instansi</strong><span>Pilih Kecamatan Pasemah Air Keruh, Desa/Sekolah, atau Puskesmas yang sesuai.</span></li>
+          <li><strong>Gunakan WhatsApp aktif</strong><span>Nomor 08 atau 628 diterima dan otomatis dinormalkan untuk WhatsApp.</span></li>
+          <li><strong>Jelaskan konteks</strong><span>Sertakan tahun anggaran, nilai kegiatan, masalah, dan hasil yang ingin dikonfirmasi.</span></li>
+          <li><strong>Lampirkan berkas</strong><span>Gunakan RAB, SPJ, DPA, atau dokumen pendukung yang relevan jika tersedia.</span></li>
+        </ol>
+      </section>
+      <section class="manual-panel manual-panel-gold">
+        <div class="manual-panel-title"><span>🛡️</span><div><span class="manual-eyebrow">UNTUK AUDITOR</span><h3>Alur menelaah tiket</h3></div></div>
+        <ol class="manual-list">
+          <li><strong>Buka Dashboard Admin</strong><span>Masuk melalui tombol Admin dan gunakan akun internal yang tersedia.</span></li>
+          <li><strong>Periksa tiket baru</strong><span>Baca identitas penanya, uraian kegiatan, kecamatan, dan lampiran.</span></li>
+          <li><strong>Tulis dasar hukum dan rekomendasi</strong><span>Gunakan regulasi terbaru, bahasa yang jelas, dan langkah tindak lanjut yang konkret.</span></li>
+          <li><strong>Kirim tanggapan</strong><span>Pratinjau pesan, simpan telaah, lalu buka WhatsApp untuk mengirim notifikasi.</span></li>
+        </ol>
+      </section>
+    </div>
+
+    <div class="manual-bottom-grid">
+      <section class="manual-checklist"><span class="manual-eyebrow">CHECKLIST SEBELUM KIRIM</span><h3>Pastikan tidak ada yang terlewat</h3>
+        <div class="check-row"><span>✓</span>Nama dan instansi sudah benar</div><div class="check-row"><span>✓</span>Nomor WhatsApp aktif</div>
+        <div class="check-row"><span>✓</span>Program dan kegiatan sudah spesifik</div><div class="check-row"><span>✓</span>Uraian masalah mudah dipahami</div><div class="check-row"><span>✓</span>Nomor tiket sudah disimpan</div>
+      </section>
+      <section class="manual-help-card"><div class="manual-help-icon">💡</div><h3>Tips cepat</h3><p>Gunakan menu <strong>Regulasi</strong> untuk membaca aturan resmi sebelum mengirim pertanyaan. Semakin lengkap konteks dan dokumen, semakin mudah auditor memberikan tanggapan yang tepat.</p><button class="manual-link-button" onclick="showPage('form')">📝 Ajukan Pertanyaan</button></section>
+    </div>
   </div>
 
   <!-- ── ADMIN ─────────────────────────────────────────────── -->

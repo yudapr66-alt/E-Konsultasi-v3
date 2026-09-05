@@ -118,6 +118,7 @@ Cari bagian `<!-- FOOTER -->` dan sesuaikan:
 | Cek Status Tiket | Publik | Cari tiket berdasarkan nomor, tampilkan tanggapan |
 | FAQ Publik | Publik | Arsip tanya-jawab yang disetujui auditor |
 | Regulasi | Publik | Download center dokumen aturan |
+| Manual Book | Publik | Panduan penggunaan untuk penanya dan auditor |
 | Dashboard Admin | Internal | Login auditor, telaah tiket, manajemen auditor, laporan |
 
 ### Fitur Khusus Dashboard Admin

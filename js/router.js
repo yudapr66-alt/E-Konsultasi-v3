@@ -38,6 +38,9 @@ function showPage(name) {
       renderRegulasi();
       break;
 
+    case 'manual':
+      break;
+
     case 'admin':
       // Cek apakah sudah login, langsung tampil dashboard
       if (localStorage.getItem('el_admin_logged')) {
