@@ -60,8 +60,8 @@ function renderRegulasi() {
         <h4>${r.title}</h4>
         <div class="reg-meta">${r.category} · Tahun ${r.year}</div>
         ${r.file_url !== '#'
-          ? `<a class="dl-btn" href="${r.file_url}" target="_blank" rel="noopener">⬇ Unduh</a>`
-          : `<button class="dl-btn" onclick="alert('⚠️ File belum tersedia. Hubungi admin Inspektorat.')">⬇ Unduh</button>`
+          ? `<a class="dl-btn" href="${r.file_url}" target="_blank" rel="noopener">👀 Lihat</a>`
+          : `<button class="dl-btn" onclick="alert('⚠️ File belum tersedia. Hubungi admin Inspektorat.')">👀 Lihat</button>`
         }
       </div>
     </div>
