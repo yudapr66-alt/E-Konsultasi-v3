@@ -1,4 +1,4 @@
-/* ============================================================
+ ============================================================
    FORM.JS — Formulir Pengajuan Konsultasi Publik
    Klinik Konsultasi APIP · Inspektorat Kab. Empat Lawang
    ============================================================ */
@@ -6,7 +6,7 @@
 // ─── DATA MASTER INSTANSI ────────────────────────────────────
 const INSTANSI_DATA = {
 
-  opd: {
+ /* opd: {
     label: 'OPD',
     unitLabel: 'Nama OPD',
     units: [
@@ -46,12 +46,13 @@ const INSTANSI_DATA = {
       'Kantor Kecamatan Talang Padang',
     ]
   },
+*/
 
   kecamatan: {
     label: 'Kecamatan',
     unitLabel: 'Unit / Desa / Sekolah',
     units: {
-      'Kecamatan Pendopo': [
+    /*  'Kecamatan Pendopo': [
         'Desa Bandar Agung','Desa Batu Cawang','Desa Bayau',
         'Desa Gunung Merakasa Lama','Desa Gunung Meraksa Baru',
         'Desa Jarakan','Desa Landur','Desa Lubuk Layang',
@@ -77,7 +78,8 @@ const INSTANSI_DATA = {
         'SDN 10 Pendopo Barat',
         'SMPN 01 Pendopo Barat','SMPN 02 Pendopo Barat',
         'SMPN 03 Pendopo Barat','SMPN 04 Pendopo Barat',
-      ],
+      ], */
+
       'Kecamatan Pasemah Air Keruh': [
         'Desa Air Mayam','Desa Bandar Agung','Desa Kebon Jati',
         'Desa Lawang Agung','Desa Muara Aman','Desa Muara Rungga',
@@ -96,11 +98,6 @@ const INSTANSI_DATA = {
         'SMPN 01 Pasemah Air Keruh','SMPN 02 Pasemah Air Keruh',
         'SMPN 03 Pasemah Air Keruh','SMPN 04 Pasemah Air Keruh',
       ],
-      'Kecamatan Muara Pinang': [],
-      'Kecamatan Lintang Kanan': [],
-      'Kecamatan Saling': [],
-      'Kecamatan Ulu Musi': [],
-      'Kecamatan Talang Padang': [],
     }
   },
 
@@ -108,17 +105,10 @@ const INSTANSI_DATA = {
     label: 'Puskesmas',
     unitLabel: 'Nama Puskesmas',
     units: [
-      'Puskesmas Pendopo',
-      'Puskesmas Pendopo Barat',
       'Puskesmas Pasemah Air Keruh',
-      'Puskesmas Muara Pinang',
-      'Puskesmas Lintang Kanan',
-      'Puskesmas Saling',
-      'Puskesmas Ulu Musi',
-      'Puskesmas Talang Padang',
     ]
   },
-
+  /*
   rs: {
     label: 'Rumah Sakit Pratama',
     unitLabel: 'Nama RS',
@@ -126,7 +116,7 @@ const INSTANSI_DATA = {
       'Rumah Sakit Pratama Kecamatan Pendopo',
     ]
   }
-
+  */
 };
 
 // ─── TOGGLE DROPDOWN INSTANSI ────────────────────────────────
@@ -393,7 +383,7 @@ async function submitForm() {
   updateStats();
 
   btn.disabled = false;
-  btn.textContent = '✉️ Kirim Permohonan Konsultasi';
+  btn.textContent = '✉️ Kirim Permohonan Pertanyaan';
 }
 
 // ─── RESET FORM ─────────────────────────────────────────────
