@@ -552,7 +552,7 @@ const steps = [
 steps[0].el.classList.add('active');
 
 const startTime = performance.now();
-const loadingDuration = 1800;
+const loadingDuration = 2300;
 function updateProgress(now) {
   const elapsed = Math.min(now - startTime, loadingDuration);
   const progress = elapsed / loadingDuration;
