@@ -417,10 +417,10 @@ body {
    FADE OUT
 ══════════════════════════════════════════ */
 .screen.out {
-  animation: fadeOut .75s ease forwards;
+  animation: fadeOut .45s ease-in forwards;
 }
 body.out {
-  animation: bgOut .75s ease forwards;
+  animation: bgOut .45s ease-in forwards;
 }
 @keyframes fadeOut {
   to { opacity: 0; transform: scale(1.025); }
@@ -551,11 +551,12 @@ const steps = [
 /* Activate first step right away */
 steps[0].el.classList.add('active');
 
-let v = 0;
-const tick = setInterval(() => {
-  /* Variable speed: fast at start, slower near 100 */
-  v += v < 30 ? .85 : v < 65 ? .55 : v < 88 ? .38 : .18;
-  if (v > 100) v = 100;
+const startTime = performance.now();
+const loadingDuration = 1800;
+function updateProgress(now) {
+  const elapsed = Math.min(now - startTime, loadingDuration);
+  const progress = elapsed / loadingDuration;
+  const v = 100 * (1 - Math.pow(1 - progress, 2));
 
   bar.style.width = v + '%';
   pct.textContent  = Math.floor(v) + '%';
@@ -572,7 +573,6 @@ const tick = setInterval(() => {
   });
 
   if (v >= 100) {
-    clearInterval(tick);
     steps[steps.length-1].el.classList.remove('active');
     steps[steps.length-1].el.classList.add('done');
     lbl.textContent = 'Selamat datang!';
@@ -580,10 +580,15 @@ const tick = setInterval(() => {
     setTimeout(() => {
       document.getElementById('screen').classList.add('out');
       document.body.classList.add('out');
-       setTimeout(() => { window.location.href = 'app.html'; }, 750);
-    }, 650);
+      setTimeout(() => { window.location.replace('app.html'); }, 450);
+    }, 180);
+    return;
   }
-}, 38);
+
+  requestAnimationFrame(updateProgress);
+}
+
+requestAnimationFrame(updateProgress);
 </script>
 
 </body>
