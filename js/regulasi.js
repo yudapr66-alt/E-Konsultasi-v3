@@ -1,6 +1,6 @@
 /* ============================================================
    REGULASI.JS — Pusat Unduh Regulasi
-   Klinik Konsultasi APIP · Inspektorat Kab. Empat Lawang
+  Klinik Pertanyaan APIP · Inspektorat Kab. Empat Lawang
 
    ⚙️  KONFIGURASI: Isi file_url dengan path file nyata di server
        misal: file_url: '/regulasi/perbup-standar-harga-2024.pdf'

@@ -1,6 +1,6 @@
 /* ============================================================
-   CEK-STATUS.JS — Cek Status Tiket Konsultasi (Publik)
-   Klinik Konsultasi APIP · Inspektorat Kab. Empat Lawang
+  CEK-STATUS.JS — Cek Status Tiket Pertanyaan (Publik)
+  Klinik Pertanyaan APIP · Inspektorat Kab. Empat Lawang
    ============================================================ */
 
 function cekStatus() {
@@ -77,7 +77,7 @@ function cekStatus() {
       <div class="status-body">
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px 20px;margin-bottom:4px;">
           <div>
-            <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--text-muted);">Pemohon</div>
+            <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--text-muted);">Penanya</div>
             <div style="font-size:13px;">${t.submitter_name}</div>
           </div>
           <div>

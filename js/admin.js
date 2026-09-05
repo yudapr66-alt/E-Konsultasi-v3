@@ -1,6 +1,6 @@
 /* ============================================================
    ADMIN.JS — Login, Dashboard, Manajemen Auditor, Tab Admin
-   Klinik Konsultasi APIP · Inspektorat Kab. Empat Lawang
+  Klinik Pertanyaan APIP · Inspektorat Kab. Empat Lawang
 
    ⚙️  KONFIGURASI: Ganti ADMIN_PASSWORD dengan password nyata
        Untuk produksi, autentikasi harus dilakukan di backend.

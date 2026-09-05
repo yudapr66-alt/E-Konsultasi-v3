@@ -1,6 +1,6 @@
 /* ============================================================
    ROUTER.JS — Navigasi Halaman & Counter Statistik
-   Klinik Konsultasi APIP · Inspektorat Kab. Empat Lawang
+  Klinik Pertanyaan APIP · Inspektorat Kab. Empat Lawang
    ============================================================ */
 
 function showPage(name) {

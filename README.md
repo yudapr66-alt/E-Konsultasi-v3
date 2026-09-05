@@ -1,7 +1,7 @@
-# Klinik Konsultasi APIP
-**Sistem E-Konsultasi Inspektorat Daerah Kabupaten Empat Lawang**
+# Klinik Pertanyaan APIP
+**Sistem E-Pertanyaan Inspektorat Daerah Kabupaten Empat Lawang**
 
-Aplikasi web ringan untuk memfasilitasi konsultasi standar harga, pajak, dan SPJ kegiatan
+Aplikasi web ringan untuk memfasilitasi pertanyaan seputar standar harga, pajak, dan SPJ kegiatan
 antara perangkat Desa/Kecamatan/OPD dengan Tim Auditor Inspektorat — tanpa login, tanpa antri.
 
 ---
@@ -21,7 +21,7 @@ klinik-konsultasi-apip/
 ├── js/
 │   ├── data.js             ← LocalStorage store, seed data, utilitas (formatDate, dll)
 │   ├── router.js           ← Navigasi halaman (showPage) + counter statistik beranda
-│   ├── form.js             ← Formulir pengajuan konsultasi publik + validasi
+│   ├── form.js             ← Formulir pengajuan pertanyaan publik + validasi
 │   ├── cek-status.js       ← Cek status tiket berdasarkan nomor tiket
 │   ├── faq.js              ← Render & filter FAQ publik
 │   ├── regulasi.js         ← Data & render daftar regulasi (download center)
@@ -49,7 +49,7 @@ Unggah seluruh folder ke hosting statis manapun:
 ```nginx
 server {
     listen 80;
-    server_name konsultasi.empatlawang.go.id;
+    server_name pertanyaan.empatlawang.go.id;
     root /var/www/klinik-apip;
     index index.html;
     location / { try_files $uri $uri/ /index.html; }
@@ -114,7 +114,7 @@ Cari bagian `<!-- FOOTER -->` dan sesuaikan:
 | Halaman | Akses | Deskripsi |
 |---|---|---|
 | Beranda | Publik | Statistik, cara pakai, tombol CTA |
-| Ajukan Konsultasi | Publik | Form input + upload berkas, generate nomor tiket |
+| Ajukan Pertanyaan | Publik | Form input + upload berkas, generate nomor tiket |
 | Cek Status Tiket | Publik | Cari tiket berdasarkan nomor, tampilkan tanggapan |
 | FAQ Publik | Publik | Arsip tanya-jawab yang disetujui auditor |
 | Regulasi | Publik | Download center dokumen aturan |
@@ -122,10 +122,10 @@ Cari bagian `<!-- FOOTER -->` dan sesuaikan:
 
 ### Fitur Khusus Dashboard Admin
 - **Filter tiket** per kecamatan, status, dan kata kunci
-- **Modal telaah** lengkap dengan info pemohon dan isian rekomendasi
+- **Modal telaah** lengkap dengan info penanya dan isian rekomendasi
 - **AI Auto-Draft** — tombol ungu yang memanggil Claude API untuk menyusun draft dasar hukum & rekomendasi otomatis
 - **Preview WA** — lihat pesan WhatsApp sebelum dikirim
-- **Tandai FAQ** — tanggapan bisa dipublikasikan ke FAQ Publik (nama pemohon disamarkan)
+- **Tandai FAQ** — tanggapan bisa dipublikasikan ke FAQ Publik (nama penanya disamarkan)
 - **Manajemen Auditor** — tambah/hapus auditor, lihat jumlah tiket ditangani
 - **Laporan & Grafik** — bar chart tiket per instansi & per kecamatan
 - **Ekspor CSV** — unduh seluruh data tiket ke Excel-compatible CSV
@@ -198,4 +198,4 @@ Pertanyaan konten regulasi: hubungi Tim Auditor Inspektorat Kab. Empat Lawang.
 
 ---
 
-*Sistem Klinik Konsultasi APIP v1.1 · Inspektorat Daerah Kabupaten Empat Lawang*
+*Sistem Klinik Pertanyaan APIP v1.1 · Inspektorat Daerah Kabupaten Empat Lawang*

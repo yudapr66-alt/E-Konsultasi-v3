@@ -1,6 +1,6 @@
 /* ============================================================
    LAPORAN.JS — Grafik Rekap & Ekspor CSV
-   Klinik Konsultasi APIP · Inspektorat Kab. Empat Lawang
+  Klinik Pertanyaan APIP · Inspektorat Kab. Empat Lawang
    ============================================================ */
 
 // ─── RENDER GRAFIK LAPORAN ───────────────────────────────────
@@ -64,7 +64,7 @@ function exportCSV() {
   }
 
   const header = [
-    'Nomor Tiket', 'Nama Pemohon', 'Instansi', 'Kecamatan',
+    'Nomor Tiket', 'Nama Penanya', 'Instansi', 'Kecamatan',
     'Jabatan', 'WhatsApp', 'Email',
     'Program', 'Kegiatan',
     'Status', 'Tanggal Masuk', 'Tanggal Dijawab',
@@ -98,7 +98,7 @@ function exportCSV() {
   const a    = document.createElement('a');
   const date = new Date().toISOString().slice(0, 10);
   a.href     = url;
-  a.download = `laporan-konsultasi-inspektorat-${date}.csv`;
+  a.download = `laporan-pertanyaan-inspektorat-${date}.csv`;
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);

@@ -1,6 +1,6 @@
 /* ============================================================
    FAQ.JS — Ruang Tanya Jawab Umum (Publik)
-   Klinik Konsultasi APIP · Inspektorat Kab. Empat Lawang
+  Klinik Pertanyaan APIP · Inspektorat Kab. Empat Lawang
    ============================================================ */
 
 let activeFaqTag = 'all';

@@ -1,6 +1,6 @@
 /* ============================================================
    TELAAH.JS — Modal Telaah Auditor, AI Auto-Draft, WA Send
-   Klinik Konsultasi APIP · Inspektorat Kab. Empat Lawang
+  Klinik Pertanyaan APIP · Inspektorat Kab. Empat Lawang
 
    ⚙️  KONFIGURASI:
        - WA_AUDITOR_NUMBER → nomor WA default auditor penelaah
@@ -20,9 +20,9 @@ function openTelaah(id) {
   // Isi header & nomor tiket
   document.getElementById('tm-ticket-num').textContent = t.ticket_number;
 
-  // Isi grid info pemohon
+  // Isi grid info penanya
   document.getElementById('tm-info').innerHTML = `
-    <div class="info-item"><label>Pemohon</label><span>${t.submitter_name}</span></div>
+    <div class="info-item"><label>Penanya</label><span>${t.submitter_name}</span></div>
     <div class="info-item"><label>Instansi</label><span>${t.institution_name}</span></div>
     <div class="info-item"><label>Jabatan</label><span>${t.position}</span></div>
     <div class="info-item"><label>Kecamatan</label><span>${t.district || '-'}</span></div>
@@ -142,7 +142,7 @@ function previewWA() {
   if (!rek) { alert('Isi kolom Rekomendasi terlebih dahulu sebelum preview.'); return; }
 
   const rekSingkat = rek.length > 150 ? rek.substring(0, 150) + '...' : rek;
-  const waText = `Halo Bapak/Ibu ${t.submitter_name} (${t.institution_name}), permohonan konsultasi Anda terkait "${t.activity_name}" telah ditelaah oleh Tim Auditor Inspektorat.
+  const waText = `Halo Bapak/Ibu ${t.submitter_name} (${t.institution_name}), pertanyaan Anda terkait "${t.activity_name}" telah ditelaah oleh Tim Auditor Inspektorat.
 
 Ringkasan Rekomendasi:
 ${rekSingkat}
@@ -190,7 +190,7 @@ function sendTelaah() {
   // Bangun link WA
   const waMessage = encodeURIComponent(
     `Halo Bapak/Ibu ${t.submitter_name} (${t.institution_name}), ` +
-    `permohonan konsultasi Anda terkait "${t.activity_name}" telah ditelaah oleh Tim Auditor Inspektorat.\n\n` +
+    `pertanyaan Anda terkait "${t.activity_name}" telah ditelaah oleh Tim Auditor Inspektorat.\n\n` +
     `Ringkasan Rekomendasi:\n${rek.substring(0, 200)}...\n\n` +
     `Untuk diskusi lebih lanjut, hubungi Auditor Penelaah: https://wa.me/${WA_AUDITOR_NUMBER}`
   );
@@ -203,7 +203,7 @@ function sendTelaah() {
   setTimeout(() => {
     const ok = confirm(
       `✅ Tanggapan berhasil disimpan!\n\n` +
-      `📱 Klik OK untuk membuka WhatsApp dan kirim notifikasi ke pemohon (${t.whatsapp_number}).`
+      `📱 Klik OK untuk membuka WhatsApp dan kirim notifikasi ke penanya (${t.whatsapp_number}).`
     );
     if (ok) window.open(waLink, '_blank');
   }, 200);
@@ -222,7 +222,7 @@ async function aiDraftTelaah() {
 Anda ahli dalam peraturan keuangan desa, pajak Dana Desa, pengadaan barang/jasa pemerintah daerah, dan SPJ kegiatan.
 
 Seorang perangkat ${t.institution_type === 'opd' ? 'OPD' : 'Desa/Kecamatan'} dari ${t.institution_name} \
-(jabatan: ${t.position}) mengajukan pertanyaan konsultasi sebagai berikut:
+(jabatan: ${t.position}) mengajukan pertanyaan sebagai berikut:
 
 Program/Kegiatan: "${t.program_name} — ${t.activity_name}"
 

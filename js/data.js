@@ -1,6 +1,6 @@
 /* ============================================================
    DATA.JS — LocalStorage Store, Seed Data, Utilitas
-   Klinik Konsultasi APIP · Inspektorat Kab. Empat Lawang
+  Klinik Pertanyaan APIP · Inspektorat Kab. Empat Lawang
 
    ⚙️  KONFIGURASI: Ganti nomor WA auditor default di AUDITORS_DEFAULT
    ============================================================ */

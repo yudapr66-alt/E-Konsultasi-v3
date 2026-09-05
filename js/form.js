@@ -1,6 +1,6 @@
 /* ============================================================
-   FORM.JS — Formulir Pengajuan Konsultasi Publik
-   Klinik Konsultasi APIP · Inspektorat Kab. Empat Lawang
+  FORM.JS — Formulir Pengajuan Pertanyaan Publik
+  Klinik Pertanyaan APIP · Inspektorat Kab. Empat Lawang
    ============================================================ */
 
 // ─── DATA MASTER INSTANSI ────────────────────────────────────
